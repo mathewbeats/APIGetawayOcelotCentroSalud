@@ -58,6 +58,18 @@
       ],
       "UpstreamPathTemplate": "/citas",
       "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/citas/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5004
+        }
+      ],
+      "UpstreamPathTemplate": "/citas/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Delete", "Patch", "Post", "Put" ]
     }
   ],
   "GlobalConfiguration": {

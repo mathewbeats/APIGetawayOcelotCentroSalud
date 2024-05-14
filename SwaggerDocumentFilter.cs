@@ -60,23 +60,7 @@ namespace APIGetaway
     {
         public void Apply(OpenApiDocument swaggerDoc, DocumentFilterContext context)
         {
-            // Añadir rutas para Citas
-            //swaggerDoc.Paths.Add("/citas", new OpenApiPathItem
-            //{
-            //    Operations = new Dictionary<OperationType, OpenApiOperation>
-            //    {
-            //        [OperationType.Get] = new OpenApiOperation
-            //        {
-            //            Summary = "Obtiene todas las citas",
-            //            Tags = new List<OpenApiTag> { new OpenApiTag { Name = "Citas" } },
-            //            Responses = new OpenApiResponses
-            //            {
-            //                ["200"] = new OpenApiResponse { Description = "Listado de citas exitosamente recuperado" }
-            //            }
-            //        }
-            //    }
-            //});
-            // Añadir rutas para Citas
+           
             var citasPathItem = new OpenApiPathItem();
             citasPathItem.Operations.Add(OperationType.Get, new OpenApiOperation
             {
